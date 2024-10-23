@@ -4,16 +4,32 @@
     gap: 1rem;
     padding: 1rem;
     background-color: #1a1a1a;
+    width: 100%;
 }
 
 .navbar a {
     color: #646cff;
     text-decoration: none;
     font-weight: 500;
+    font-size: 1.2rem; /* Increase font size */
+    padding: 0.5rem 1rem; /* Add padding to resemble buttons */
+    border: 2px solid transparent; /* Add border for button effect */
+    border-radius: 8px; /* Round the corners */
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        border-color 0.3s; /* Smooth transition */
 }
 
 .navbar a:hover {
     color: #535bf2;
+    background-color: #2a2a2a; /* Change background color on hover */
+}
+
+.navbar a.active {
+    color: white;
+    background-color: #646cff; /* Change background color for active tab */
+    border-color: #535bf2; /* Change border color for active tab */
 }
 
 .home,
@@ -21,6 +37,14 @@
 .about {
     text-align: center;
     padding: 2rem;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.content {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
 }
 
 .profile-pic {
