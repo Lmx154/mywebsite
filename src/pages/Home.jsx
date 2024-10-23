@@ -5,12 +5,15 @@ function Home() {
     <div className="home">
       <h1>Welcome to My Portfolio</h1>
       <img src={profilePic} alt="Profile" className="profile-pic" />
-      <p>Hi, Im [Your Name], a passionate developer.</p>
+      <p>Hi, I'm Luis Martinez, a passionate developer.</p>
       <div className="links">
-        <a href="https://github.com/yourusername" target="_blank">
+        <a href="https://github.com/Lmx154" target="_blank">
           GitHub
         </a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/luis-martinez-1174b8199/"
+          target="_blank"
+        >
           LinkedIn
         </a>
       </div>

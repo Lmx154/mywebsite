@@ -36,7 +36,7 @@ To get started with this project, follow these steps:
 2. **Install dependencies:**
 
    ```bash
-   npm install
+   npm install react-router-dom
    ```
 
 ## Usage
