@@ -19,6 +19,8 @@ function About() {
         <li>Django rest framework</li>
         <li>Postgres SQL</li>
         <li>MySQL</li>
+        <li>Ruby</li>
+        <li>Ruby on Rails</li>
 
         {/* Add more skills as needed */}
       </ul>

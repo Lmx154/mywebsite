@@ -1,0 +1,31 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.home-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
