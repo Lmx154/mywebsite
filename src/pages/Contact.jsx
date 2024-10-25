@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Contact.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -22,40 +23,51 @@ function Contact() {
   };
 
   return (
-    <div className="contact">
-      <h1>Contact Me</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
+    <div className="responsive-layout">
+      <div className="responsive-content">
+        <div className="responsive-text">
+          <h1>Contact Me</h1>
+          <form onSubmit={handleSubmit}>
+            <label>
+              Name:
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </label>
+            <label>
+              Email:
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </label>
+            <label>
+              Message:
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div className="responsive-image">
+          <img
+            src="path/to/your/profile.jpg"
+            alt="Profile"
+            className="profile-pic"
           />
-        </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <label>
-          Message:
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
+        </div>
+      </div>
     </div>
   );
 }

@@ -109,3 +109,57 @@ button:focus-visible {
         font-size: 22px; /* Increase font size for very large screens */
     }
 }
+
+/* Global responsive layout class */
+.responsive-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.responsive-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    flex-direction: column; /* Default to column layout */
+}
+
+.responsive-text {
+    flex: 1;
+    padding: 20px;
+    text-align: center; /* Center text in portrait mode */
+}
+
+.responsive-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 300px; /* Adjust the size as needed */
+    height: 300px; /* Adjust the size as needed */
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Media query for landscape mode */
+@media (orientation: landscape) {
+    .responsive-content {
+        flex-direction: row; /* Switch to row layout in landscape mode */
+    }
+
+    .responsive-text {
+        text-align: left; /* Align text to the left in landscape mode */
+        padding-right: 20px; /* Add padding to the right */
+    }
+
+    .responsive-image {
+        padding-left: 20px; /* Add padding to the left */
+    }
+}

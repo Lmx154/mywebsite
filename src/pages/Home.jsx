@@ -1,15 +1,16 @@
-import profilePic from "../assets/profile.jpg"; // Add your profile picture to the assets folder
-import githubIcon from "../assets/github.svg"; // Import the GitHub icon
-import linkedinIcon from "../assets/linkedin.svg"; // Import the LinkedIn icon
-import "./Home.css"; // Import the CSS file
+import React from "react";
+import profilePic from "../assets/profile.jpg";
+import githubIcon from "../assets/github.svg";
+import linkedinIcon from "../assets/linkedin.svg";
+import "./Home.css";
 
 function Home() {
   return (
-    <div className="home">
-      <div className="home-content">
-        <div className="home-text">
-          <h1>Welcome to My Portfolio</h1>
-          <p>Hi, I'm Luis Martinez, a passionate developer.</p>
+    <div className="responsive-layout">
+      <div className="responsive-content">
+        <div className="responsive-text">
+          <h1 className="typing-animation">Welcome to My Portfolio</h1>
+          <p>Hi, I&apos;m Luis Martinez, a passionate developer.</p>
           <div className="links">
             <a
               href="https://github.com/Lmx154"
@@ -29,7 +30,7 @@ function Home() {
             </a>
           </div>
         </div>
-        <div className="home-image">
+        <div className="responsive-image">
           <img src={profilePic} alt="Profile" className="profile-pic" />
         </div>
       </div>
