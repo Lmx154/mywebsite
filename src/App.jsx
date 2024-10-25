@@ -11,7 +11,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/mywebsite">
       <div className="navbar">
         <NavLink
           to="/"
