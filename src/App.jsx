@@ -12,28 +12,28 @@ import "./App.css";
 function App() {
   return (
     <Router basename="/mywebsite">
-      <div className="navbar">
-        <NavLink
-          to="/"
-          end
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
-          About Me
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
-          Contact Me
-        </NavLink>
-      </div>
       <div className="content">
+        <nav className="nav-links">
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            About Me
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Contact Me
+          </NavLink>
+        </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
