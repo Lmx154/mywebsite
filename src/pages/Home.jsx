@@ -6,9 +6,9 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className="responsive-layout">
-      <div className="responsive-content">
-        <div className="responsive-text">
+    <div className="home">
+      <div className="home-content">
+        <div className="home-text">
           <h1 className="typing-animation">Welcome to My Portfolio</h1>
           <p>Hi, I&apos;m Luis Martinez, a passionate developer.</p>
           <div className="links">
@@ -30,7 +30,7 @@ function Home() {
             </a>
           </div>
         </div>
-        <div className="responsive-image">
+        <div className="home-image">
           <img src={profilePic} alt="Profile" className="profile-pic" />
         </div>
       </div>

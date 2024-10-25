@@ -1,4 +1,8 @@
 .about {
+    display: flex;
+    flex-direction: column; /* Default to column layout */
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
     width: 100%;
     box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
@@ -13,7 +17,7 @@
     width: 100%;
     height: auto;
     box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
-    margin-right: 2rem; /* Add some space between the PDF and the content */
+    margin-top: 2rem; /* Add some space between the text and the PDF */
 }
 
 .about-content {
@@ -30,6 +34,16 @@
     margin-bottom: 1rem;
 }
 
+.about ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.about li {
+    margin-bottom: 0.5rem;
+}
+
 .responsive-iframe {
     position: relative;
     width: 100%;
@@ -44,4 +58,20 @@
     width: 100%;
     height: 100%;
     border: none; /* Remove default iframe border */
+}
+
+/* Media query for landscape mode */
+@media (orientation: landscape) {
+    .about {
+        flex-direction: row; /* Switch to row layout in landscape mode */
+    }
+
+    .resume-container {
+        margin-top: 0; /* Remove top margin in landscape mode */
+        margin-left: 2rem; /* Add left margin in landscape mode */
+    }
+
+    .about-content {
+        margin-right: 2rem; /* Add right margin in landscape mode */
+    }
 }

@@ -23,9 +23,9 @@ function Contact() {
   };
 
   return (
-    <div className="responsive-layout">
-      <div className="responsive-content">
-        <div className="responsive-text">
+    <div className="contact">
+      <div className="contact-content">
+        <div className="form-container">
           <h1>Contact Me</h1>
           <form onSubmit={handleSubmit}>
             <label>
@@ -60,7 +60,7 @@ function Contact() {
             <button type="submit">Submit</button>
           </form>
         </div>
-        <div className="responsive-image">
+        <div className="profile-container">
           <img
             src="path/to/your/profile.jpg"
             alt="Profile"
