@@ -5,6 +5,7 @@
     align-items: center;
     padding: 2rem;
     width: 100%;
+    height: 100vh; /* Ensure the about section takes the full viewport height */
     box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
     margin-top: 2rem; /* Add top margin to create space below the nav bar */
 }
@@ -18,10 +19,17 @@
     height: auto;
     box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
     margin-top: 2rem; /* Add some space between the text and the PDF */
+    order: 2; /* Default order */
 }
 
 .about-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center the text */
+    order: 1; /* Default order */
 }
 
 .about h1 {
@@ -64,14 +72,19 @@
 @media (orientation: landscape) {
     .about {
         flex-direction: row; /* Switch to row layout in landscape mode */
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
     }
 
     .resume-container {
         margin-top: 0; /* Remove top margin in landscape mode */
         margin-left: 2rem; /* Add left margin in landscape mode */
+        order: 1; /* Swap order in landscape mode */
     }
 
     .about-content {
         margin-right: 2rem; /* Add right margin in landscape mode */
+        text-align: center; /* Center the text */
+        order: 2; /* Swap order in landscape mode */
     }
 }
