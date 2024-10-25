@@ -34,12 +34,12 @@ body {
 
 a {
     font-weight: 500;
-    color: var(--primary-color); /* Use the primary color */
-    text-decoration: inherit;
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove default underline */
 }
 
 a:hover {
-    color: var(--primary-color); /* Use the primary color */
+    text-decoration: underline; /* Underline on hover */
 }
 
 body {
@@ -83,7 +83,7 @@ button:focus-visible {
     }
 
     a:hover {
-        color: var(--primary-color); /* Use the primary color */
+        text-decoration: underline; /* Underline on hover */
     }
 
     button {

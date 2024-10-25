@@ -1,3 +1,6 @@
+import React from "react";
+import "./About.css";
+
 function About() {
   return (
     <div className="about">
@@ -21,9 +24,23 @@ function About() {
         <li>MySQL</li>
         <li>Ruby</li>
         <li>Ruby on Rails</li>
-
         {/* Add more skills as needed */}
       </ul>
+      <p>
+        Below is my resume. You can also{" "}
+        <a href="/src/assets/resume.pdf" download>
+          download it here
+        </a>
+        .
+      </p>
+      <div className="resume-container">
+        <iframe
+          src="/src/assets/resume.pdf"
+          width="100%"
+          height="600px"
+          title="Resume"
+        ></iframe>
+      </div>
     </div>
   );
 }

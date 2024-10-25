@@ -1,44 +1,40 @@
-/* Update the nav-links styles */
+/* App.css */
 .nav-links {
-    position: absolute; /* Position the nav-links absolutely */
-    top: 1rem; /* Position from the top */
-    right: 1rem; /* Position from the right */
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     display: flex;
-    gap: 3rem; /* Increase gap to separate the links */
+    gap: 3rem;
 }
 
 .nav-links a {
-    color: var(--primary-color); /* Use the primary color */
+    color: inherit;
     text-decoration: none;
-    font-weight: bold; /* Make text bold */
-    font-size: 1.5rem; /* Increase font size */
-    transition:
-        text-decoration 0.3s ease,
-        color 0.3s ease; /* Smooth transition for text-decoration and color */
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: text-decoration 0.3s ease;
 }
 
 .nav-links a:hover {
-    text-decoration: underline; /* Solid underline effect on hover */
+    text-decoration: underline;
 }
 
 .nav-links a.active {
-    text-decoration: underline; /* Underline for active link */
+    text-decoration: underline;
 }
 
-/* Keep the rest of your styles */
 .home,
-.contact,
 .about {
     text-align: center;
     padding: 2rem;
     width: 100%;
-    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    box-sizing: border-box;
 }
 
 .content {
     flex: 1;
     width: 100%;
-    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    box-sizing: border-box;
 }
 
 .profile-pic {
@@ -51,15 +47,13 @@
 .links a {
     display: block;
     margin: 0.5rem 0;
-    color: var(--primary-color); /* Use the primary color */
+    color: inherit;
     text-decoration: none;
-    transition:
-        text-decoration 0.3s ease,
-        color 0.3s ease; /* Smooth transition for text-decoration and color */
+    transition: text-decoration 0.3s ease;
 }
 
 .links a:hover {
-    text-decoration: underline; /* Solid underline effect on hover */
+    text-decoration: underline;
 }
 
 form {
@@ -87,21 +81,21 @@ form button {
     padding: 0.5rem;
     border: none;
     border-radius: 4px;
-    background-color: var(--primary-color); /* Use the primary color */
+    background-color: var(--primary-color);
     color: white;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: var(--primary-color); /* Use the primary color */
+    background-color: var(--primary-color);
 }
 
 .about ul {
-    list-style-type: disc; /* Ensure bullet points are used */
-    padding-left: 1.5rem; /* Add some padding to the left for indentation */
-    margin-top: 0.5rem; /* Reduce the top margin to bring the list closer to the preceding text */
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .about li {
-    margin-bottom: 0.5rem; /* Add some space between list items */
+    margin-bottom: 0.5rem;
 }
