@@ -1,4 +1,6 @@
 import profilePic from "../assets/profile.jpg"; // Add your profile picture to the assets folder
+import githubIcon from "../assets/github.svg"; // Import the GitHub icon
+import linkedinIcon from "../assets/linkedin.svg"; // Import the LinkedIn icon
 import "./Home.css"; // Import the CSS file
 
 function Home() {
@@ -13,15 +15,17 @@ function Home() {
               href="https://github.com/Lmx154"
               target="_blank"
               rel="noopener noreferrer"
+              className="icon-button"
             >
-              GitHub
+              <img src={githubIcon} alt="GitHub" className="icon" />
             </a>
             <a
               href="https://www.linkedin.com/in/luis-martinez-1174b8199/"
               target="_blank"
               rel="noopener noreferrer"
+              className="icon-button"
             >
-              LinkedIn
+              <img src={linkedinIcon} alt="LinkedIn" className="icon" />
             </a>
           </div>
         </div>
