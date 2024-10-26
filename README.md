@@ -14,7 +14,7 @@ This is a simple portfolio website built with React and Vite. It includes three 
 
 ## Demo
 
-You can view a live demo of the website [here](http://localhost:5173/).
+You can view a live demo of the website [here](https://lmx154.github.io/mywebsite/).
 
 ## Features
 
@@ -24,16 +24,9 @@ You can view a live demo of the website [here](http://localhost:5173/).
 
 ## Installation
 
-To get started with this project, follow these steps:
+To get started with this project:
 
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
-   ```
-
-2. **Install dependencies:**
+ **Install dependencies:**
 
    ```bash
    npm install react-router-dom
@@ -59,11 +52,18 @@ mywebsite/
 │   └── vite.svg
 ├── src/
 │   ├── assets/
-│   │   └── profile.jpg
+│   │   ├── github.svg
+│   │   ├── linkedin.svg
+│   │   ├── profile.svg
+│   │   ├── profile.jpg
+│   │   └── resume.pdf
 │   ├── pages/
 │   │   ├── Home.jsx
+│   │   ├── Home.css
 │   │   ├── Contact.jsx
+│   │   ├── Contact.css
 │   │   ├── About.jsx
+│   │   └── About.css
 │   ├── App.jsx
 │   ├── App.css
 │   ├── index.css
