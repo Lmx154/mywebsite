@@ -55,8 +55,8 @@
 .responsive-iframe {
     position: relative;
     width: 100%;
-    padding-bottom: 75%; /* Aspect ratio of 4:3 */
-    height: 0;
+    height: 100%; /* Ensure the iframe takes the full height of its container */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
 }
 
 .responsive-iframe iframe {
@@ -74,12 +74,16 @@
         flex-direction: row; /* Switch to row layout in landscape mode */
         justify-content: center; /* Center items horizontally */
         align-items: center; /* Center items vertically */
+        height: 100vh; /* Ensure the about section takes the full viewport height in landscape mode */
     }
 
     .resume-container {
         margin-top: 0; /* Remove top margin in landscape mode */
         margin-left: 2rem; /* Add left margin in landscape mode */
         order: 1; /* Swap order in landscape mode */
+        min-height: 80vh !important; /* Ensure a minimum height in landscape mode with higher specificity */
+        height: 80vh; /* Set explicit height in landscape mode */
+        padding: 2rem; /* Add padding to ensure space inside the container */
     }
 
     .about-content {

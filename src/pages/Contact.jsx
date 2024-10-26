@@ -23,7 +23,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact-content">
         <div className="form-container">
           <h1>Contact Me</h1>
@@ -59,13 +59,6 @@ function Contact() {
             </label>
             <button type="submit">Submit</button>
           </form>
-        </div>
-        <div className="profile-container">
-          <img
-            src="path/to/your/profile.jpg"
-            alt="Profile"
-            className="profile-pic"
-          />
         </div>
       </div>
     </div>

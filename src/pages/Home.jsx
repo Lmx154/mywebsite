@@ -6,7 +6,7 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="home-content">
         <div className="home-text">
           <h1 className="typing-animation">Welcome to My Portfolio</h1>
