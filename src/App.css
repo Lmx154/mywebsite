@@ -1,9 +1,14 @@
 .nav-links {
-    position: absolute;
-    top: 1rem;
+    position: fixed; /* Make the navigation bar fixed */
+    top: 0; /* Position it at the top of the viewport */
     right: 1rem;
+    left: 1rem;
     display: flex;
+    justify-content: flex-end; /* Align links to the right */
     gap: 3rem;
+    background-color: #242424; /* Background color to match the page */
+    padding: 1rem; /* Add some padding */
+    z-index: 1000; /* Ensure it stays on top of other content */
 }
 
 .nav-links a {
@@ -23,4 +28,5 @@
     flex: 1;
     width: 100%;
     box-sizing: border-box;
+    padding-top: 4rem; /* Add padding to the top to account for the fixed navigation bar */
 }
